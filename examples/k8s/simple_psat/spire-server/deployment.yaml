@@ -23,6 +23,7 @@ spec:
       serviceAccountName: spire-server
       containers:
         - name: spire-server
+          imagePullPolicy: Always
           image: ghcr.io/spiffe/spire-server:1.6.1
           args: ["-config", "/run/spire/config/server.conf"]
           ports:
