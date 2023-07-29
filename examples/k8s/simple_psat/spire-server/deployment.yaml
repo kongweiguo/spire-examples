@@ -24,7 +24,7 @@ spec:
       containers:
         - name: spire-server
           imagePullPolicy: Always
-          image: ghcr.io/spiffe/spire-server:1.6.1
+          image: ghcr.io/spiffe/spire-server
           args: ["-config", "/run/spire/config/server.conf"]
           ports:
             - containerPort: 8081
