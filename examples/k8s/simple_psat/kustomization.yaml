@@ -9,10 +9,10 @@ resources:
 
 images:
   - name: ghcr.io/spiffe/spire-server
-    newName: cr-cn-beijing.volces.com/will/kongweiguo-spire-server
+    newName: cr-cn-beijing.volces.com/will/spire-server
     newTag: v1.7.1
   - name: ghcr.io/spiffe/spire-agent
-    newName: cr-cn-beijing.volces.com/will/kongweiguo-spire-agent
+    newName: cr-cn-beijing.volces.com/will/spire-agent
     newTag: v1.7.1
   - name: gcr.io/spiffe-io/wait-for-it
     newName: cr-cn-beijing.volces.com/will/wait-for-it
