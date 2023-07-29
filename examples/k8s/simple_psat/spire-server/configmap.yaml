@@ -33,7 +33,7 @@ data:
           clusters = {
             "demo-cluster" = {
               service_account_allow_list = ["spire:spire-agent"]
-              allowed_node_label_keys = ["topology.kubernetes.io/region","topology.kubernetes.io/zone", "beta.kubernetes.io/instance-type","byted.sh"]
+              allowed_node_label_keys = ["topology.kubernetes.io/region","topology.kubernetes.io/zone", "beta.kubernetes.io/instance-type","byted.sh/poc","byted.sh"]
             }
           }
         }

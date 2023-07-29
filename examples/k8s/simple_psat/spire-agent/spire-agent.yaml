@@ -121,6 +121,11 @@ spec:
       labels:
         app: spire-agent
     spec:
+      tolerations:
+      - key: "byted.sh/taints"
+        operator: "Equal"
+        value: "test"
+        effect: "NoSchedule"
       hostPID: true
       hostNetwork: true
       dnsPolicy: ClusterFirstWithHostNet
