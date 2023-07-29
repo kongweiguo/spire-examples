@@ -19,3 +19,4 @@
 # Editor specific configuration
 .idea
 .vscode
+.DS_Store
