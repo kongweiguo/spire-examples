@@ -4,5 +4,21 @@ kind: Kustomization
 namespace: spire
 
 resources:
-- spire-server.yaml
-- spire-agent.yaml
+- ./spire-server
+- ./spire-agent
+
+images:
+  - name: ghcr.io/spiffe/spire-server
+    newName: cr-cn-beijing.volces.com/will/kongweiguo-spire-server
+    newTag: v1.7.1
+  - name: ghcr.io/spiffe/spire-agent
+    newName: cr-cn-beijing.volces.com/will/kongweiguo-spire-agent
+    newTag: v1.7.1
+  - name: gcr.io/spiffe-io/wait-for-it
+    newName: cr-cn-beijing.volces.com/will/wait-for-it
+    newTag: latest
+
+# docker tag ghcr.io/spiffe/spire-server:1.6.1 cr-cn-beijing.volces.com/will/spire-server:1.6.1
+# docker tag ghcr.io/spiffe/spire-agent:1.6.1 cr-cn-beijing.volces.com/will/spire-agent:1.6.1
+# docker push cr-cn-beijing.volces.com/will/spire-server:1.6.1
+# docker push cr-cn-beijing.volces.com/will/spire-agent:1.6.1
